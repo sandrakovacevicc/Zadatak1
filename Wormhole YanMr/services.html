@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Services</title>
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="hamburger-menu">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+      <span>Close</span>
+    </div>
+    <section class="sidebar">
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="home.html" class="menu-link">Home</a>
+        </li>
+        <li class="menu-item">
+          <a href="services.html" class="menu-link">Services</a>
+        </li>
+        <li class="menu-item">
+          <a href="aboutus.html" class="menu-link">About us</a>
+        </li>
+        <li class="menu-item">
+          <a href="testimonials.html" class="menu-link">Testimonial</a>
+        </li>
+      </ul>
+    </section>
+    <div class="nav">
+      <div class="logo">Consult<span class="logo_FON">US</span></div>
+
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+      </ul>
+    </div>
+    <h1>Services</h1>
+    <div class="kartice">
+      <div class="card">
+        <div class="img-wrapper">
+          <img src="slike/Chat.png" alt="" />
+        </div>
+        <h2>Consulting</h2>
+        <p>
+          We stay with our clients all the way until a solution is implemented
+          and works.
+        </p>
+      </div>
+      <div class="card">
+        <div class="img-wrapper">
+          <img src="slike/Chart.png" alt="" />
+        </div>
+        <h2>Business</h2>
+        <p>
+          We stay with our clients all the way until a solution is implemented
+          and works.
+        </p>
+      </div>
+      <div class="card">
+        <div class="img-wrapper">
+          <img src="slike/Work.png" alt="" />
+        </div>
+        <h2>Management</h2>
+        <p>
+          We stay with our clients all the way until a solution is implemented
+          and works.
+        </p>
+      </div>
+    </div>
+    <div class="rez">
+      <div class="rez-naslov">
+        <h1>Consulting</h1>
+      </div>
+      <form id="frm">
+        <label>Name:</label>
+        <input
+          class="imeprezime"
+          name="ip_"
+          type="text"
+          placeholder="Name"
+          required
+          id="ip"
+        />
+        <div id="pol">
+          <p>Gender:</p>
+          <input type="radio" id="zenski" name="pol_" value="Zenski" />
+          <label for="zenski">Woman</label>
+          <input type="radio" id="muski" name="pol_" value="Muski" />
+          <label for="muski">Man</label>
+          <input type="radio" id="Drugo" name="pol_" value="Drugo" />
+          <label for="drugo">Other</label>
+        </div>
+        <div class="ljudi">
+          <p>People number:</p>
+          <p><input type="number" name="ljudi" value="1" id="brljudi" /></p>
+        </div>
+
+        <label>Date:</label>
+        <input
+          class="datum"
+          id="datum"
+          type="date"
+          placeholder="Date and time"
+          required
+          name="date"
+          value="2022-01-14T20:00"
+        />
+        <label>Other wishes:</label>
+        <input
+          class="potrebe"
+          id="poruka"
+          type="text"
+          placeholder="Other wishes"
+        />
+        <button
+          class="button"
+          name="button"
+          value="Submit"
+          onclick="getInputValue()"
+        >
+          Reserve
+        </button>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-navigation-menu">
+            <a href="home.html">Home</a>
+            <a href="aboutus.html">About us</a>
+            <a href="services.html">Services</a>
+            <a href="testimonials.html">Testimonials</a>
+          </div>
+          <div class="footer-form">
+            <h2>Sign up for email updates</h2>
+            <form class="input-group" action="">
+              <input type="text" placeholder="Email addres" />
+              <button class="button footer-button">Subscribe</button>
+            </form>
+            <div class="social-media footer-media">
+              <a href="#"><img src="slike/white linkedin.svg" alt="" /></a>
+              <a href="#"><img src="slike/white instagram.svg" alt="" /></a>
+              <a href="#"><img src="slike/white twitter.svg" alt="" /></a>
+              <a href="#"><img src="slike/white facebook.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="reservation.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
